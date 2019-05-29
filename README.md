@@ -1,2 +1,2 @@
 # siege-insights-swex-plugin
-Siege Inisghts plugin for Summoners War Exporter
+Siege Insights plugin for Summoners War Exporter
