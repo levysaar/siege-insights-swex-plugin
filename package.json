@@ -1,0 +1,29 @@
+{
+  "name": "siege-insights-swex-plugin",
+  "version": "1.0.0",
+  "description": "Siege Insights plugin for Summoners War Exporter",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/levysaar/siege-insights-swex-plugin.git"
+  },
+  "keywords": [
+    "swex",
+    "swexporter",
+    "siege insights",
+    "siege-insights",
+    "summoners war"
+  ],
+  "author": "Saar Levy",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/levysaar/siege-insights-swex-plugin/issues"
+  },
+  "homepage": "https://github.com/levysaar/siege-insights-swex-plugin#readme",
+  "dependencies": {
+    "sanitize-filename": "^1.6.1"
+  }
+}
