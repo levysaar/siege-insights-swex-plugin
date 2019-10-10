@@ -39,7 +39,7 @@ module.exports = {
     });
     proxy.on('GetGuildSiegeBaseDefenseUnitList', (req, resp) => {
       if (config.Config.Plugins[this.pluginName].enabled) {
-        if (req.base_number === 1) {
+        if ([1, 14, 27].includes(req.base_number)) {
           this.data['defense_list'] = resp;
           this.logged_data.defense_list = 1;
           this.writeSiegeMatchToFile(proxy, this.data, 'defenses list');
@@ -48,7 +48,7 @@ module.exports = {
     });
     proxy.on('GetGuildSiegeBaseDefenseUnitListPreset', (req, resp) => {
       if (config.Config.Plugins[this.pluginName].enabled) {
-        if (req.base_number === 1) {
+        if ([1, 14, 27].includes(req.base_number)) {
           this.data['defense_list'] = resp;
           this.logged_data.defense_list = 1;
           this.writeSiegeMatchToFile(proxy, this.data, 'defenses list');
