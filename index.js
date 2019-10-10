@@ -46,6 +46,15 @@ module.exports = {
         }
       }
     });
+    proxy.on('GetGuildSiegeBaseDefenseUnitListPreset', (req, resp) => {
+      if (config.Config.Plugins[this.pluginName].enabled) {
+        if (req.base_number === 1) {
+          this.data['defense_list'] = resp;
+          this.logged_data.defense_list = 1;
+          this.writeSiegeMatchToFile(proxy, this.data, 'defenses list');
+        }
+      }
+    });
   },
   writeSiegeMatchToFile(proxy, data, log_msg) {
     const filename = sanitize(this.match_id ? `SiegeMatch-${this.match_id}` : 'SiegeDefenseList').concat('.json');
