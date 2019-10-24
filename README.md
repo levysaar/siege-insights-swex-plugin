@@ -10,3 +10,9 @@ can be found here: [Swex files path](https://i.imgur.com/V52VLlg.png)
 
 ## Requirements
 - SWEX Ver 0.0.25 and up (latest prefered)
+
+## Plugin data logs
+- Active Siege match: Open the siege map in order to generate - used for the majority of data in the General and the Players list pages
+- Attack Log: Open Info->Attack tab - used for the Attack Stats page, and few other parameters on the General page
+- Defense Log: Open Info->Defense tab - used for the Attack Stats page
+- Defense List: Open your HQ (The main unattackable base) - used for the Defense List page
