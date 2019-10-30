@@ -13,7 +13,7 @@ module.exports = {
   match_id: undefined,
   init(proxy, config) {
     proxy.on('GetGuildSiegeMatchupInfo', (req, resp) => {
-      if (config.Config.Plugins[this.pluginName].enabled) {
+      if (config.Config.Plugins[this.pluginName].enabled && resp.ret_code === 0) {
         this.data['wizard_id'] = req.wizard_id;
         this.data['matchup_info'] = resp;
         this.logged_data.matchup_info = 1;
