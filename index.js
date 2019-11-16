@@ -41,6 +41,7 @@ module.exports = {
       if (config.Config.Plugins[this.pluginName].enabled) {
         if ([1, 14, 27].includes(req.base_number)) {
           this.data['defense_list'] = resp;
+          this.data.defense_list.hq_base_number = req.base_number;
           this.logged_data.defense_list = 1;
           this.writeSiegeMatchToFile(proxy, this.data, 'defenses list');
         }
@@ -50,6 +51,7 @@ module.exports = {
       if (config.Config.Plugins[this.pluginName].enabled) {
         if ([1, 14, 27].includes(req.base_number)) {
           this.data['defense_list'] = resp;
+          this.data.defense_list.hq_base_number = req.base_number;
           this.logged_data.defense_list = 1;
           this.writeSiegeMatchToFile(proxy, this.data, 'defenses list');
         }
